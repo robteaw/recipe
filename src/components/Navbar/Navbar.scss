@@ -1,0 +1,20 @@
+:root {
+    --background: #8c38ff;
+    --text: #fff;
+}
+
+.container {
+    background-color: var(--background);
+    color: var(--text);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.5rem 3rem;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
