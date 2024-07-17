@@ -1,11 +1,9 @@
 :root {
     --background: #ffbf00;
     --text: #fff;
-    --logo: #884ea0;
     --border: #ffbf00;
-    --link: #196f3d;
+    --link: #884ea0;
     --linkHover: #fff;
-    --primary: #8c38ff;
 }
 
 .container {
@@ -13,7 +11,7 @@
     color: var(--text);
     width: 100%;
     margin: 0 auto;
-    padding: 0.5rem 3rem;
+    padding: 0.75rem 3rem;
     position: sticky;
     display: flex;
     align-items: center;
@@ -51,6 +49,10 @@
     color: var(--linkHover);
 }
 
+.logo {
+    width: 11rem;
+}
+
 /* desktop view */
 @media (min-width: 850px) {
     .menu {
@@ -68,10 +70,10 @@
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 4.375rem; /* places the menu below the navbar */
+        top: 3.75rem; /* places the menu below the navbar */
         left: 0;
         background-color: var(--background);
-        transition: max-height 0.5s ease;
+        transition: all 0.6s ease;
         overflow: hidden;
         max-height: 0; /* initial max height to zero to hide */
     }
@@ -79,7 +81,8 @@
     .menu.active {
         display: flex;
         max-height: 300px; /* adjust based on your menu height */
-        transition: max-height 0.6s ease;
+        padding-bottom: 1rem;
+        transition: all 0.6s ease;
         z-index: 999;
         opacity: 0.95;
         outline: none;
