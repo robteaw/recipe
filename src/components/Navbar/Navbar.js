@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
+import logo from "../../assets/images/logo.png";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function Navbar() {
@@ -13,8 +14,7 @@ export default function Navbar() {
   return (
     <div className="container">
       <Link to="/">
-        <h3>Simple Recipes</h3>
-        <img src="" alt="" className="logo" onClick={closeMobileMenu} />
+        <img src={logo} alt="" className="logo" onClick={closeMobileMenu} />
       </Link>
       <div className={click ? "menu active" : "menu"}>
         <Link to="/" className="nav-item">
