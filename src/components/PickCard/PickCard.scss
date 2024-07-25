@@ -1,0 +1,21 @@
+.cardSet {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    .card {
+        padding: 1rem;
+        .image {
+            height: 20rem;
+            width: 15rem;
+            border-radius: 2rem;
+            cursor: pointer;
+            object-fit: cover;
+        }
+        .name {
+            text-align: center;
+            margin-top: 13px;
+        }
+    }
+}
