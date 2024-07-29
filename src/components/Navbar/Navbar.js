@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
+import Search from "../../components/Search/Search";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -16,6 +17,7 @@ export default function Navbar() {
       <Link to="/">
         <img src={logo} alt="" className="logo" onClick={closeMobileMenu} />
       </Link>
+      <Search />
       <div className={click ? "menu active" : "menu"}>
         <Link to="/" className="nav-item">
           Appetizer
